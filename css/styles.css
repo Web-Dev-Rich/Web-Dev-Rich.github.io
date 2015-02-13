@@ -1,0 +1,22 @@
+body {
+    background-color: #D9FDDE;
+    color: #115211;
+}
+
+dt:after {
+    content: ":";
+}
+
+a, a:active, a:visited, a:hover {
+    font-weight: bold;
+    color: #115211;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    background-color: #115211;
+    color: #D9FDDE;
+}
