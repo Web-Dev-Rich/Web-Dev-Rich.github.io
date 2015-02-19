@@ -1,6 +1,12 @@
 body {
     background-color: #D9FDDE;
     color: #115211;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+b {
+    font-weight: 400;
 }
 
 dt:after {
