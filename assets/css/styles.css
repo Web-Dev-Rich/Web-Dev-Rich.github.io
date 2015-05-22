@@ -22,10 +22,6 @@ b {
     font-weight: 400;
 }
 
-dt:after {
-    content: ":";
-}
-
 a, a:active, a:visited, a:hover {
     font-weight: bold;
     color: #115211;
@@ -40,14 +36,19 @@ a:active, a:hover {
     color: #D9FDDE;
 }
 
-.wrapper {
-    margin: 0 auto;
-    width: 100%;
-}
-
 header {
     background-color: #fff;
     text-align: center;
+}
+
+img:hover {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
 }
 
 .main {
@@ -58,6 +59,7 @@ header {
     body {
         font-size: 1.125em;
     }
+
     .wrapper {
         max-width: 640px;
     }
