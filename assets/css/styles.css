@@ -1,7 +1,20 @@
+html {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+       -moz-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
 body {
     background-color: #D9FDDE;
     color: #115211;
     font-family: 'Lato', sans-serif;
+    font-size: 1em;
     font-weight: 300;
 }
 
@@ -25,4 +38,27 @@ a, a:visited {
 a:active, a:hover {
     background-color: #115211;
     color: #D9FDDE;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    background-color: #fff;
+    text-align: center;
+}
+
+.main {
+    background-color: #fff;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 1.125em;
+    }
+    .wrapper {
+        max-width: 640px;
+    }
 }
