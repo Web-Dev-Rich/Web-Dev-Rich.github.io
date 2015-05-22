@@ -38,11 +38,19 @@ a:active, a:hover {
 
 header {
     background-color: #fff;
+    margin-top: 150px;
     text-align: center;
 }
 
-img:hover {
+header img {
+    margin-top: -75px;
+}
+
+header img:hover {
     -webkit-transform: rotate(5deg);
+       -moz-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+         -o-transform: rotate(5deg);
             transform: rotate(5deg);
 }
 
@@ -53,6 +61,10 @@ img:hover {
 
 .main {
     background-color: #fff;
+}
+
+.about-me {
+    text-align: center;
 }
 
 @media screen and (min-width: 600px) {
