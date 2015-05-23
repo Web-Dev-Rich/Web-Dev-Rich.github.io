@@ -13,7 +13,7 @@ html {
 body {
     background-color: #e7ede7;
     color: #517551;
-    font-family: 'Lato', sans-serif;
+    font-family: "Gentium Basic", Georgia, serif;
     font-size: 1em;
     font-weight: 300;
 }
@@ -52,6 +52,16 @@ header img:hover {
         -ms-transform: rotate(5deg);
          -o-transform: rotate(5deg);
             transform: rotate(5deg);
+}
+
+h1 {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 1.8em;
 }
 
 .wrapper {
