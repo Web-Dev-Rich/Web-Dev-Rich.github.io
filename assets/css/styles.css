@@ -37,7 +37,9 @@ a:active, a:hover {
 }
 
 header {
-    background-color: #fff;
+    background-color: #93B392;
+    border-bottom: #8AAD89 solid 10px;
+    color: #FFF;
     margin-top: 150px;
     text-align: center;
 }
@@ -71,6 +73,8 @@ h2 {
 
 .main {
     background-color: #fff;
+    border-bottom: #8AAD89 solid 10px;
+
 }
 
 .about-me {
