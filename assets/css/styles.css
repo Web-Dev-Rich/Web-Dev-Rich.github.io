@@ -153,12 +153,21 @@ h3 {
 }
 
 .about-me {
-    color: #8AAD89;
     text-align: center;
 }
 
 .skill {
     color: #c23038;
+}
+
+footer {
+    background-color: #fff;
+    border-bottom: #8AAD89 solid 10px;
+    font-size: 0.75em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px 30px;
+    text-align: center;
 }
 
 @media screen and (min-width: 600px) {
