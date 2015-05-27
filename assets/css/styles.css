@@ -29,10 +29,6 @@ body {
     line-height: 1.5;
 }
 
-b {
-    font-weight: 400;
-}
-
 a {
     border-bottom: 1px solid #333;
     color: inherit;
@@ -158,6 +154,10 @@ h3 {
 
 .skill {
     color: #c23038;
+}
+
+.strong {
+    font-weight: 700;
 }
 
 footer {
