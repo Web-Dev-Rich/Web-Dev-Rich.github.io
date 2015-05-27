@@ -35,6 +35,10 @@ a {
     text-decoration: none;
 }
 
+a img {
+    border-bottom: none;
+}
+
 a:active,
 a:focus,
 a:hover {
