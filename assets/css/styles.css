@@ -35,8 +35,12 @@ a {
     text-decoration: none;
 }
 
-a img {
-    border-bottom: none;
+header a,
+header a:active,
+header a:focus,
+header a:hover,
+header a:visited {
+    border-bottom-style: none;
 }
 
 a:active,
