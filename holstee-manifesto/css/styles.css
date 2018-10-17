@@ -1,0 +1,67 @@
+.teko-font {
+  font-family: 'Teko', sans-serif;
+}
+
+.ultra-font {
+  font-family: 'Ultra', serif;
+}
+
+.emphasis {
+  font-weight: 700;
+}
+
+.large-text {
+  font-size: 25px;
+}
+
+.medium-text {
+  font-size: 20px;
+}
+
+.small-text {
+  font-size: 15px;
+}
+
+.wrapper {
+  padding: 10px;
+  background: lightgray;
+  overflow: auto;
+  width: 460px;
+}
+
+.top-part article {
+  float: left;
+}
+
+.bottom-part article {
+  float: right;
+}
+
+article {
+  width: 200px;
+  padding: 15px;
+}
+
+.color1 {
+  background: #98FB98;
+}
+
+.color2 {
+  background: #C89065;
+}
+
+.color3 {
+  background: #AE8361;
+}
+
+.color4 {
+  background: #BFB2FC;
+}
+
+.single-height {
+  height: 200px;
+}
+
+.double-height {
+  height: 430px;
+}
