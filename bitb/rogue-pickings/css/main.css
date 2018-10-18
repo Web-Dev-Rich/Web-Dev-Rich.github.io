@@ -1,0 +1,153 @@
+/****** BASE STYLES ******/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+/****** GRID ******/
+
+.full-width {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.half-width {
+  width: 600px;
+  float: left;
+}
+
+.third-width {
+  width: 339.33px;
+  float: left;
+}
+
+/****** HEADER ******/
+
+header h1 {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+header h1 span {
+  color: #77A466;
+}
+
+header img {
+  border-top: 3px solid #77A365;
+  border-bottom: 3px solid #77A365;
+}
+
+nav {
+  float: right;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 17px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #77A466;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+/****** WELCOME ******/
+
+#welcome {
+  padding-bottom: 40px;
+}
+
+#welcome h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #77A466;
+  padding: 30px 0 15px 0;
+}
+
+#welcome p {
+  line-height: 25px;
+}
+
+/****** THIRDS ******/
+
+.third-width {
+  border-top: 1px solid #EDEDED;
+  border-bottom: 1px solid #EDEDED;
+  padding: 30px;
+  height: 210px;
+}
+
+.third-width h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+#first-third {
+  border-right: 1px solid #EDEDED;
+}
+
+#last-third {
+  border-left: 1px solid #EDEDED;
+}
+
+.third-width ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.third-width ul li {
+  font-size: 16px;
+  padding: 0 0 10px 0;
+  color: #77A466;
+}
+
+.third-width address {
+  line-height: 25px;
+  margin-left: 0;
+  font-style: normal;
+}
+
+.third-width blockquote {
+  line-height: 21px;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.third-width blockquote::before {
+  content: open-quote;
+}
+
+.third-width blockquote::after {
+  content: close-quote;
+}
+
+/****** FOOTER ******/
+
+footer {
+  clear: both;
+  text-align: center;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 23px;
+  text-transform: uppercase;
+  padding: 33px;
+  margin: 0;
+  font-weight: 700;
+}
+
+footer span {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  color: #77A466;
+  text-transform: lowercase;
+}
