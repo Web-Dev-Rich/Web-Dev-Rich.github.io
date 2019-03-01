@@ -7,7 +7,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
- 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -99,16 +99,196 @@ textarea {
 
 
 
+   /***** BASE STYLES *****/
+   :root {
+     --color1: #202020;
+     --color2: #fafad2;
+     --color3: #f00;
+   }
 
+   html {
+     font-size: 24px;
+   }
 
+   body {
+     font-family: 'Source Sans Pro', sans-serif;
+   }
 
+   h1, h2, h3 {
+     font-family: adobe-text-pro, Baskerville, serif;
+   }
 
+   a:not(img) {
+     text-decoration: none;
+     display: inline-block;
+     position: relative;
+     color: var(--color3);
+     line-height: 1em;
+   }
 
+   .my-name {
+     color: var(--color3);
+   }
 
+   a:before:not(img) {
+     transition: -ms-transform 0.2s, -webkit-transform 0.2s, transform 0.2s, opacity 0.2s;
+     -webkit-transition: -webkit-transform 0.2s, transform 0.2s, opacity 0.2s;
+     content: "";
+     position: absolute;
+     bottom: -0.1rem;
+     left: 0;
+     height: 0.15em;
+     width: 100%;
+     opacity: 0.15;
+     background: var(--color3);
+     transform: scaleY(0.5);
+     -ms-transform: scaleY(0.5);
+     -webkit-transform: scaleY(0.5);
+     z-index: -1;
+   }
 
+   a:hover,
+   a:focus,
+   a:active {
+     text-shadow: 1px 1px 0 white;
+   }
 
+   a:hover:before,
+   a:focus:before,
+   a:active:before {
+     opacity: 1;
+   }
 
+   /***** GRID *****/
+   .full-width {
+     width: 1200px;
+     margin: 0 auto;
+   }
 
+   .half-width {
+     width: 600px;
+     float: left;
+   }
+
+   .third-width {
+     width: 400px;
+     float: left;
+   }
+
+   /***** HEADER *****/
+   #header {
+     height: 650px;
+   }
+
+   #header h1 {
+     font-size: 1.75rem;
+   }
+
+   #header h2 {
+     font-size: 2.5rem;
+     clear: both;
+     padding-top: 100px;
+   }
+
+   #header h2 img {
+     padding-right: 20px;
+   }
+
+   #header h3 {
+     font-size: 1.5rem;
+     margin-right: 30%;
+   }
+
+   #header li:first-child,
+   #header li:nth-child(2) {
+     padding-right: 3px;
+   }
+
+   #header li:last-child,
+   #header li:nth-child(2) {
+     padding-left: 3px;
+   }
+
+   /***** NAV *****/
+   nav {
+     float: right;
+   }
+
+   nav ul li {
+     display: inline-block;
+   }
+
+   /***** ABOUT *****/
+   #about {
+     background-color: var(--color2);
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23202020' fill-opacity='0.08'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+     height: 1050px;
+   }
+
+   #about ul {
+     list-style-type: none;
+   }
+
+   #about li {
+     padding-bottom: 10px;
+   }
+
+   #about-middle {
+     text-align: center;
+   }
+
+   #about h2 {
+     padding-top: 150px;
+   }
+
+   /***** PORTFOLIO *****/
+   #portfolio {
+     height: 850px;
+   }
+
+   #portfolio h2 {
+     text-align: center;
+     padding-top: 80px;
+   }
+
+   .portfolio-item-text {
+     padding-left: 10px;
+     padding-right: 10px;
+   }
+
+   /***** CONTACT *****/
+   #contact {
+     background-color: var(--color2);
+     background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23202020' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");
+     height: 650px;
+   }
+
+   #contact h2 {
+     text-align: center;
+     padding-top: 150px;
+   }
+
+   #contact .third-width {
+     text-align: center;
+   }
+
+   #contact img {
+     padding: 10px 15px;
+   }
+
+   .social-icons {
+     color: var(--color3);
+     padding: 10px;
+   }
+
+   /***** FOOTER *****/
+   footer {
+     text-align: center;
+   }
+
+   .special {
+     font-family: 'Inconsolata', Courier, monospace;
+   }
 
 
 
@@ -192,7 +372,7 @@ textarea {
   clear: both;
 }
 
- 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -210,7 +390,7 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
 
- 
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -286,5 +466,3 @@ textarea {
         page-break-after: avoid;
     }
 }
-
-

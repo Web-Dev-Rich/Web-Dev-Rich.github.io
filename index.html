@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Rich Keyzor | Web Developer</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,6 +13,12 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.typekit.net/zai3dlr.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/brands.css" integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-toEUmnrGu+eq8XUD6ovsr/vFX+R3v9+FUGAnpef+uwGKMCeqZkcZfkXQ0Pls5WS7" crossorigin="anonymous">
+
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -23,7 +29,111 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <header id="header">
+    <div class="full-width">
+      <div class="half-width">
+        <h1>Rich Keyzor</h1>
+      </div>
+      <div class="half-width">
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h2><img src="img/computer-icon.png" alt="">Hello World, I’m <span class="my-name">Rich Keyzor</span>.</h2>
+        <h3>I am a freelance front-end web developer. I try to make better web experiences for everyone.</h3>
+    </div>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about">
+      <div class="full-width">
+        <div class="third-width" id="about-left">&nbsp;</div>
+        <div class="third-width" id="about-middle">
+          <h2>A Little About Me</h2>
+          <p>I believe the web should be accessible to everyone and everyone should have access to the Internet.</p>
+          <h3>Some of my strengths and areas of interest</h3>
+          <ul>
+            <li>Communicative</li>
+            <li>Responsive</li>
+            <li>Logical thinker</li>
+            <li>Interested in open source</li>
+            <li>Interested in the Circular Economy</li>
+            <li>Interested in the Civic Tech</li>
+            <li>Interested in the human impact on the planet</li>
+            <li>Keen on Responsive Web Design and Progressive Enhancement</li>
+          </ul>
+        </div>
+        <div class="third-width" id="about-right">&nbsp;</div>
+      </div>
+    </section>
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <div class="full-width">
+        <h2>My Portfolio</h2>
+
+        <div class="third-width">
+          <a href="../bitb/rogue-pickings/"><img src="img/small-business-screenshot.png" alt="small business website."></a>
+          <div class="portfolio-item-text">
+            <h3>Small Business Website</h3>
+            <p>Semantic HTML & CSS from a design comp</p>
+            <p>I created this concept site with hand-coded HTML5 and CSS from a Photoshop comp. The site is a fixed layout and uses floats for the 3-columns but I hope to make it a responsive layout in a future iteration.</p>
+          </div>
+        </div>
+
+        <div class="third-width">
+          <a href="../bitb/jubilee-austen/"><img src="img/portfolio-site-screenshot.png" alt="portfolio site."></a>
+          <div class="portfolio-item-text">
+            <h3>Single Page Portfolio Website</h3>
+            <p>Semantic HTML & CSS from a design comp</p>
+            <p>Another hand-coded site. This time a fixed-width, single page layout incorporating a floated grid layout. All images and dimensions were extracted from the comp. Again a site that I will convert to a responsive layout in the future.</p>
+          </div>
+        </div>
+
+        <div class="third-width">
+          <a href="../bitb/holstee-manifesto/"><img src="img/holstee-screenshot.png" alt="float layout project."></a>
+          <div class="portfolio-item-text">
+            <h3>Float Layout Project</h3>
+            <p>Exercise in Using Floats for Layout</p>
+            <p>This little project shows that floats can be used for fixed-width layouts. It is based on the original Holstee story & manifesto.</p>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="full-width">
+        <h2>Connect with me</h2>
+        <div class="third-width">
+          <h3>Hire me</h3>
+          <p>+44 (0)7554 011878
+          <br>web_dev_rich@keyzor.net</p>
+        </div>
+        <div class="third-width">
+          <h3>Follow me</h3>
+          <a href="https://twitter.com/Web_Dev_Rich"><span class="social-icons"><i class="fab fa-twitter fa-2x"></i></span></a>
+          <a href="https://github.com/Web-Dev-Rich"><span class="social-icons"><i class="fab fa-github fa-2x"></i></span></a>
+          <a href="https://www.linkedin.com/in/webdevrich/"><span class="social-icons"><i class="fab fa-linkedin-in fa-2x"></i></span></a>
+        </div>
+        <div class="third-width">
+          <h3>Meet me</h3>
+          <p>Salisbury UK
+          <br>I love coffee!</p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="full-width">
+        <p>Copyright 2019 | Rich Keyzor</p>
+      </div>
+    </footer>
+  </main>
+
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
