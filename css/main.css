@@ -143,53 +143,42 @@ a:active:before {
   opacity: 1;
 }
 
-/***** GRID *****/
-.full-width {
-  width: 1200px;
-  margin: 0 auto;
+.content-wrapper {
+  width: 90%;
+  margin: 30px 0;
 }
 
-.half-width {
-  width: 600px;
-  float: left;
-}
-
-.third-width {
-  width: 400px;
-  float: left;
-}
-
-/***** HEADER *****/
-#header {
+/***** HEADER & FOOTER *****/
+header {
   height: 650px;
 }
 
-#header h1 {
+header h1 {
   font-size: 1.75rem;
 }
 
-#header h2 {
+header h2 {
   font-size: 2.5rem;
   clear: both;
   padding-top: 100px;
 }
 
-#header h2 img {
+header h2 img {
   padding-right: 20px;
 }
 
-#header h3 {
+header h3 {
   font-size: 1.5rem;
   margin-right: 30%;
 }
 
-#header li:first-child,
-#header li:nth-child(2) {
+header li:first-child,
+header li:nth-child(2) {
   padding-right: 3px;
 }
 
-#header li:last-child,
-#header li:nth-child(2) {
+header li:last-child,
+header li:nth-child(2) {
   padding-left: 3px;
 }
 
