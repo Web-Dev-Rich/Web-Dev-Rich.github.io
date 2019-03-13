@@ -95,10 +95,12 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: adobe-text-pro, Baskerville, serif;
 }
 
@@ -115,7 +117,8 @@ a:not(img) {
 }
 
 a:before:not(img) {
-  transition: -ms-transform 0.2s, -webkit-transform 0.2s, transform 0.2s, opacity 0.2s;
+  transition: -ms-transform 0.2s, -webkit-transform 0.2s, transform 0.2s,
+    opacity 0.2s;
   -webkit-transition: -webkit-transform 0.2s, transform 0.2s, opacity 0.2s;
   content: "";
   position: absolute;
@@ -149,43 +152,48 @@ a:active:before {
 }
 
 /***** HEADER & FOOTER *****/
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  width: 100%;
+}
+
 header {
-  height: 650px;
+  /* height: 650px; */
 }
 
 header h1 {
   font-size: 1.75rem;
 }
 
-header h2 {
-  font-size: 2.5rem;
-  clear: both;
-  padding-top: 100px;
-}
-
 header h2 img {
   padding-right: 20px;
 }
 
-header h3 {
-  font-size: 1.5rem;
-  margin-right: 30%;
-}
-
-header li:first-child,
-header li:nth-child(2) {
-  padding-right: 3px;
-}
-
-header li:last-child,
-header li:nth-child(2) {
-  padding-left: 3px;
-}
-
 /***** NAV *****/
-nav {
-  float: right;
-}
 
 nav ul li {
   display: inline-block;
@@ -195,7 +203,7 @@ nav ul li {
 #about {
   background-color: var(--color2);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23202020' fill-opacity='0.08'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  height: 1050px;
+  /* height: 1050px; */
 }
 
 #about ul {
@@ -216,7 +224,7 @@ nav ul li {
 
 /***** PORTFOLIO *****/
 #portfolio {
-  height: 850px;
+  /* height: 850px; */
 }
 
 #portfolio h2 {
@@ -241,10 +249,6 @@ nav ul li {
   padding-top: 150px;
 }
 
-#contact .third-width {
-  text-align: center;
-}
-
 #contact img {
   padding: 10px 15px;
 }
@@ -255,12 +259,8 @@ nav ul li {
 }
 
 /***** FOOTER *****/
-footer {
-  text-align: center;
-}
-
 .special {
-  font-family: 'Inconsolata', Courier, monospace;
+  font-family: "Inconsolata", Courier, monospace;
 }
 
 /* ==========================================================================
@@ -356,9 +356,9 @@ footer {
 }
 
 @media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -368,7 +368,6 @@ footer {
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-
   *,
   *:before,
   *:after {
@@ -386,11 +385,11 @@ footer {
   }
 
   a[href]:after {
-    content: " ("attr(href) ")";
+    content: " (" attr(href) ")";
   }
 
   abbr[title]:after {
-    content: " ("attr(title) ")";
+    content: " (" attr(title) ")";
   }
 
   /*
